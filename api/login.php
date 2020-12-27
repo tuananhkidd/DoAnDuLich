@@ -18,7 +18,7 @@
 				$response["message"] = "Đăng nhập thành công";
 				$response["user_name"] = $user_name;
 				$response["email"] = $email;
-
+				$response["id"] = $row["user_id"];
 				$currentDate = date("Y-m-d H:i:s");
 				$userId = $row['user_id'];
 				$sql = "INSERT INTO user_log (user_id,device,created_date) VALUES ('$userId', '$device', '$currentDate')";

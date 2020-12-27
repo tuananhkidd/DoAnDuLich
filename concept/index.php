@@ -66,7 +66,7 @@
                                                 <tbody>
                                                 <?php
                                                 include 'DBHelper.php';
-                                                $user = mysqli_query($con,"SELECT u.user_id,a.user_name,u.device,u.created_date FROM user_log u join account a on u.user_id = a.user_id" ); 
+                                                $user = mysqli_query($con,"SELECT u.user_id,a.user_name,u.device,u.created_date FROM user_log u join account a on u.user_id = a.user_id order by u.created_date desc" ); 
                                                 $count = 1;
                                                 while($row = mysqli_fetch_array($user)){
                                                 echo "<tr>";

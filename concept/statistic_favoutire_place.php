@@ -70,8 +70,6 @@
                                                 <tbody>
                                                 <?php
                                                 include 'DBHelper.php';
-                                                //$con = mysqli_connect("localhost","id14138645_andyphuong", "Nguyenphuong-0908", "id14138645_andyphuong");
-                                                mysqli_select_db($con,"id14138645_luanvanandyphuong");
                                                 mysqli_query($con,"SET NAMES 'utf8'");
                                                 $user = mysqli_query($con,"SELECT DISTINCT(p.place_name) as 'name',
                                                 (

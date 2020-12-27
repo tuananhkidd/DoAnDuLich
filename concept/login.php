@@ -1,4 +1,4 @@
-<!doctype html>
+!doctype html>
 <html lang="en">
  
 <head>
@@ -33,8 +33,7 @@
     <!-- login page  -->
     <!-- ============================================================== -->
 	<?php
-	$con = mysqli_connect("localhost","id14138645_andyphuong", "Nguyenphuong-0908", "id14138645_andyphuong");
-    mysqli_select_db($con,"id14138645_luanvanandyphuong");
+	include 'DBHelper.php';
 	/** Array for JSON response*/
 	$response = array();
 	if($_SERVER['REQUEST_METHOD']=='POST'){
